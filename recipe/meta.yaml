@@ -1,4 +1,4 @@
-{% set version = '1.1.0' %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/vpc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/vpc/vpc_{{ version }}.tar.gz
-  sha256: 9dbbc3cfd34b94e0dfe615b740cc4c4fcc80ec28406fb9d7b03efb1fdd379a97
+  sha256: bd1a4b0f02df521aeca341ce11938b9d5214fcec0ce267400dddcfc89c831f17
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -50,13 +50,10 @@ test:
 about:
   home: https://github.com/ronkeizer/vpc
   license: MIT
-  summary: Visual predictive checks are a commonly used diagnostic plot in pharmacometrics, showing
-    how certain statistics (percentiles) for observed data compare to those same statistics
-    for data simulated from a model. The package can generate VPCs for continuous, categorical,
-    censored, and (repeated) time-to-event data.
+  summary: Visual predictive checks are a commonly used diagnostic plot in pharmacometrics, showing how certain statistics (percentiles) for observed data compare to those same statistics for data simulated from a model. The package can generate VPCs for continuous, categorical, censored, and (repeated) time-to-event data.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
