@@ -30,8 +30,9 @@ requirements:
     - r-dplyr
     - r-ggplot2
     - r-readr
-    - r-reshape2
+    - r-stringr
     - r-survival
+    - r-tidyr
   run:
     - r-base
     - r-mass
@@ -39,8 +40,9 @@ requirements:
     - r-dplyr
     - r-ggplot2
     - r-readr
-    - r-reshape2
+    - r-stringr
     - r-survival
+    - r-tidyr
 
 test:
   commands:
