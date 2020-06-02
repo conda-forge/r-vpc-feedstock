@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/vpc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/vpc/vpc_{{ version }}.tar.gz
-  sha256: bd1a4b0f02df521aeca341ce11938b9d5214fcec0ce267400dddcfc89c831f17
+  sha256: 8754272ccc98e5e611fee878c1db0123db010648dc1c32424e75384f22bae370
 
 build:
   merge_build_host: true  # [win]
