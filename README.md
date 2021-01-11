@@ -5,11 +5,9 @@ Home: https://github.com/ronkeizer/vpc
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-vpc-feedstock/blob/master/LICENSE.txt)
 
 Summary: Visual predictive checks are a commonly used diagnostic plot in pharmacometrics, showing how certain statistics (percentiles) for observed data compare to those same statistics for data simulated from a model. The package can generate VPCs for continuous, categorical, censored, and (repeated) time-to-event data.
-
-
 
 Current build status
 ====================
